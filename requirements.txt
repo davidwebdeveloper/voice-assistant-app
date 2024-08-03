@@ -1,0 +1,8 @@
+whisper
+sounddevice
+scipy
+pyaudio
+wave
+spacy
+pyttsx3
+requests
