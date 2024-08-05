@@ -46,6 +46,10 @@ def recognize_intent_and_date(text):
     city_dict = {city.lower(): city for city in cities}
     
     intents = {
+        "name_query": ["what is your name", "who are you", "your name"],
+        "age_query": ["how old are you", "your age"],
+        "creator_query": ["who created you", "who made you", "your creator"],
+        "favorite_color_query": ["what is your favorite color", "favorite color"],
         "set_reminder": ["reminder", "remind", "remember", "set", "create", "make", "call"],
         "get_weather": ["weather", "forecast", "temperature", "rainy", "sunny"],    
         "send_email": ["email", "mail", "send", "write"],

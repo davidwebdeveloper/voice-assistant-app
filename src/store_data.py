@@ -127,7 +127,7 @@ def fetch_indian_cities_from_db():
         )
         if connection.is_connected():
             cursor = connection.cursor()
-            cursor.execute("SELECT DISTINCT city_ascii FROM world_cities WHERE country = 'India'")
+            cursor.execute("SELECT DISTINCT city_ascii FROM world_cities")
             cities = {row[0].lower(): row[0] for row in cursor.fetchall()}
             return cities
     except Error as e:

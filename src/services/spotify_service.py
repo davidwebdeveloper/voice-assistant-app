@@ -1,6 +1,10 @@
 import requests
+from dotenv import load_dotenv
+import os
 
-token = "BQCTJq0aSUUzuZAfTYgHEGGC2txGJmnD7NOGYsDkehUIlCTqj_uOWCy04qQR7lQ7CoTDtxQuRSUKk_8y98oJHHQ7t5S57iOjFpL6hYgApusPT47jx5BpDWe0-FV-kBinaKrIzxOZUekIAyfP1VliUWrwk3tzDxy-JH3LJ1CY12VPh83YvU8Phz4QswGvaD-ynQ_4-WC3Xank268uSTYQkPl7PIU8_gXhlBgJPZbtPCuRbe07w_oi7lg2mN4RAewdYsZHEMpkY1McC6k7AytcMg1cbQPIfA"
+load_dotenv()
+
+token = os.getenv("SPOTIFY_TOKEN")
 
 
 

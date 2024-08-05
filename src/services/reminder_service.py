@@ -36,8 +36,4 @@ def get_reminders():
     load_reminders()  # Load reminders before returning
     return reminders
 
-# Example usage
-date_time = datetime.now()  # Replace with actual date_time
-description = "Buy groceries"
-print(set_reminder(date_time, description))
-print(get_reminders())
+
